@@ -1,0 +1,26 @@
+.formContainer{
+    border:solid 2px black;
+    box-shadow: 20px;
+    .title{
+        color: white;
+        width: 100%;
+        .titleEdit{
+            padding: 10px;
+            font-weight: 900px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    } 
+    .inputs{
+       margin: 30px;
+    
+    }
+    .divInputsBottom{
+        display: flex;
+        justify-content: center;
+        margin: 10px
+        ;
+        .inputSubmit{
+            margin: 5px;
+        }
+    }
+}
