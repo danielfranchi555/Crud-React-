@@ -3,7 +3,7 @@ import './Table.scss'
 
 export const Table = ({db,loading,deleteData,setdataToEdit}) => {
      if(loading){
-        return <h1 style={{color:'white'}}>Loading...</h1>
+        return <h1 style={{color:'black'}} className='text-center'>Loading...</h1>
     } 
   return (
     <div className='containerTable'>
