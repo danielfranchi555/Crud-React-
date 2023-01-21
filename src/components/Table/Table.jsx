@@ -6,12 +6,11 @@ export const Table = ({db,loading,deleteData,setdataToEdit}) => {
         return <h1 style={{color:'white'}}>Loading...</h1>
     } 
   return (
-    <div className=''>
+    <div className='containerTable'>
         <table class="table table-dark">
   <thead>
     <tr>
      <th scope="col">Name</th>
-      <th scope="col">Username</th>
       <th scope="col">Email</th>
       <th scope="col">Acciones</th>
     </tr>
@@ -20,7 +19,6 @@ export const Table = ({db,loading,deleteData,setdataToEdit}) => {
     {db.map((user)=>(
    <tr key={user.id}>
       <td>{user.name}</td>
-      <td>{user.username}</td>
       <td>{user.email}</td>
       <td className='d-flex' style={{flexDirection:'column'}} >
       <div className='py-2'>

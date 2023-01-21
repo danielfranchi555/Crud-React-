@@ -47,46 +47,28 @@ export const Form = ({ createData, updateData, dataToEdit, setdataToEdit }) => {
   };
 
   return (
-    <div className=" mt-3  mb-4 " style={{ alignItems: "center" }}>
-      <form className="formContainer" onSubmit={handleSubmit}>
-        <div className="title bg-dark">
-             {dataToEdit?<h1 className="titleEdit">Edit user</h1>:<h1 className="titleEdit">Add user</h1>}
-        </div>
-        <div className=" inputs">
-          <input
+      <div className="containerForm">
+         <form className="formContainer" onSubmit={handleSubmit}>
+          <h1 className="text-center">{dataToEdit?'Edit user':'Add user'}</h1>
+        <input
             type="text"
             name="name"
             placeholder="name"
             onChange={handleChange}
             value={form.name}
-            className="text-center form-control "
-            style={{ width: "400px" }}
+            className="field"
           />
-        </div>
+      
 
-        <div className="inputs">
-          <input
-            type="text"
-            name="username"
-            placeholder="surname"
-            onChange={handleChange}
-            className=" text-center form-control  "
-            style={{ width: "400px" }}
-            value={form.username}
-          />
-        </div>
-
-        <div className="inputs">
           <input
             type="email"
             name="email"
             placeholder="email"
             onChange={handleChange}
-            className="text-center form-control  "
+            className=" field"
             value={form.email}
-            style={{ width: "400px" }}
+           
           />
-        </div>
 
         <div className="divInputsBottom">
           <div className="inputSubmit">
@@ -101,6 +83,8 @@ export const Form = ({ createData, updateData, dataToEdit, setdataToEdit }) => {
           </div>
         </div>
       </form>
-    </div>
+      </div>
+     
+    
   );
 };

@@ -1,26 +1,26 @@
 .formContainer{
-    border:solid 2px black;
-    box-shadow: 20px;
-    .title{
-        color: white;
-        width: 100%;
-        .titleEdit{
-            padding: 10px;
-            font-weight: 900px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-    } 
-    .inputs{
-       margin: 30px;
-    
+    margin: 0 auto;
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 0 rgb(84, 81, 81); 
+    border-radius: 20px;
+        input{
+       border: solid 1px black;
+       border-radius: 10px;
+       margin: 10px;
+    }
+    .field{
+        border: solid 1px rgb(197, 188, 188);
+        padding: 10px;
+        width: 250px;
+    }
+    .field:focus{
+        border-color: rgb(11, 11, 167);
     }
     .divInputsBottom{
         display: flex;
         justify-content: center;
-        margin: 10px
-        ;
-        .inputSubmit{
-            margin: 5px;
-        }
     }
 }
